@@ -8,6 +8,6 @@ namespace Datos
 {
     public static class CadenaConexion
     {
-        public static string Cadena = "Data Source=localhost; Initial Catalog=factura; User ID=root; Password=12344567890";
+        public static string Cadena = "Data Source=localhost; Initial Catalog=factura; User ID=root; Password=1234567890;";
     }
 }

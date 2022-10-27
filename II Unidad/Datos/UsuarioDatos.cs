@@ -42,13 +42,17 @@ namespace Datos
             DataTable dt = new DataTable();
             try
             {
-                string sql = "SELECT * FROM usuario";
+                string sql = "SELECT * FROM usuario;";
 
-                using (MySqlCommand comando = new MySqlCommand(CadenaConexion.Cadena))
+                using (MySqlConnection _conexion = new MySqlConnection(CadenaConexion.Cadena))
                 {
-                    comando.CommandType = System.Data.CommandType.Text;
-                    MySqlDataReader dr = (MySqlDataReader)await comando.ExecuteReaderAsync();
-                    dt.Load(dr);
+                    await _conexion.OpenAsync();
+                    using(MySqlCommand comando = new MySqlCommand(sql, _conexion))
+                    {
+                        comando.CommandType = System.Data.CommandType.Text;
+                        MySqlDataReader dr = (MySqlDataReader)await comando.ExecuteReaderAsync();
+                        dt.Load(dr);
+                    }                    
                 }
             }
             catch (Exception ex)
@@ -93,7 +97,7 @@ namespace Datos
             bool actualizo = false;
             try
             {
-                string sql = "UPDATE usuario SET Nombre=@Nombre, Clave=@Clave, Correo=@Correo, Rol=@Rol, EstaActivo=@EstaActivo WHERE Codigo=@Codigo;";
+                string sql = "UPDATE usuario SET Nombre=@Nombre, Clave=@Clave, Correo=@Correo, ROL=@Rol, EstaActivo=@EstaActivo WHERE Codigo=@Codigo;";
 
                 using (MySqlConnection _conexion = new MySqlConnection(CadenaConexion.Cadena))
                 {

@@ -36,7 +36,9 @@
             this.AceptarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // UsuarioLabel
@@ -50,15 +52,16 @@
             // 
             // UsuarioTextBox
             // 
-            this.UsuarioTextBox.Location = new System.Drawing.Point(123, 14);
+            this.UsuarioTextBox.Location = new System.Drawing.Point(87, 15);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(217, 23);
             this.UsuarioTextBox.TabIndex = 1;
             // 
             // ClaveTextBox
             // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(123, 58);
+            this.ClaveTextBox.Location = new System.Drawing.Point(87, 59);
             this.ClaveTextBox.Name = "ClaveTextBox";
+            this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(217, 23);
             this.ClaveTextBox.TabIndex = 3;
             // 
@@ -73,26 +76,45 @@
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Location = new System.Drawing.Point(63, 106);
+            this.AceptarButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AceptarButton.Image = global::Vista.Properties.Resources.Aceptar;
+            this.AceptarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AceptarButton.Location = new System.Drawing.Point(39, 98);
             this.AceptarButton.Name = "AceptarButton";
             this.AceptarButton.Size = new System.Drawing.Size(107, 34);
             this.AceptarButton.TabIndex = 4;
             this.AceptarButton.Text = "Aceptar";
+            this.AceptarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AceptarButton.UseVisualStyleBackColor = true;
             this.AceptarButton.Click += new System.EventHandler(this.AceptarButton_Click);
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Location = new System.Drawing.Point(219, 106);
+            this.CancelarButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CancelarButton.Image = global::Vista.Properties.Resources.Cancelar;
+            this.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CancelarButton.Location = new System.Drawing.Point(195, 98);
             this.CancelarButton.Name = "CancelarButton";
             this.CancelarButton.Size = new System.Drawing.Size(107, 34);
             this.CancelarButton.TabIndex = 5;
             this.CancelarButton.Text = "Cancelar";
+            this.CancelarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Vista.Properties.Resources.Login;
+            this.pictureBox1.Location = new System.Drawing.Point(317, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(153, 117);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
@@ -100,7 +122,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.CancelarButton;
-            this.ClientSize = new System.Drawing.Size(391, 180);
+            this.ClientSize = new System.Drawing.Size(482, 149);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.AceptarButton);
             this.Controls.Add(this.ClaveTextBox);
@@ -109,8 +132,10 @@
             this.Controls.Add(this.UsuarioLabel);
             this.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "Login";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,5 +150,6 @@
         private Button AceptarButton;
         private Button CancelarButton;
         private ErrorProvider errorProvider1;
+        private PictureBox pictureBox1;
     }
 }
