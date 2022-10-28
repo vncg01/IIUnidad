@@ -44,14 +44,16 @@
             // UsuarioLabel
             // 
             this.UsuarioLabel.AutoSize = true;
-            this.UsuarioLabel.Location = new System.Drawing.Point(26, 22);
+            this.UsuarioLabel.Font = new System.Drawing.Font("Fredericka the Great", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UsuarioLabel.Location = new System.Drawing.Point(12, 19);
             this.UsuarioLabel.Name = "UsuarioLabel";
-            this.UsuarioLabel.Size = new System.Drawing.Size(55, 16);
+            this.UsuarioLabel.Size = new System.Drawing.Size(68, 19);
             this.UsuarioLabel.TabIndex = 0;
             this.UsuarioLabel.Text = "Usuario";
             // 
             // UsuarioTextBox
             // 
+            this.UsuarioTextBox.Font = new System.Drawing.Font("Fredericka the Great", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.UsuarioTextBox.Location = new System.Drawing.Point(87, 15);
             this.UsuarioTextBox.Name = "UsuarioTextBox";
             this.UsuarioTextBox.Size = new System.Drawing.Size(217, 23);
@@ -59,6 +61,7 @@
             // 
             // ClaveTextBox
             // 
+            this.ClaveTextBox.Font = new System.Drawing.Font("Fredericka the Great", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ClaveTextBox.Location = new System.Drawing.Point(87, 59);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
@@ -68,20 +71,21 @@
             // ClaveLabel
             // 
             this.ClaveLabel.AutoSize = true;
-            this.ClaveLabel.Location = new System.Drawing.Point(39, 66);
+            this.ClaveLabel.Font = new System.Drawing.Font("Fredericka the Great", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ClaveLabel.Location = new System.Drawing.Point(25, 63);
             this.ClaveLabel.Name = "ClaveLabel";
-            this.ClaveLabel.Size = new System.Drawing.Size(43, 16);
+            this.ClaveLabel.Size = new System.Drawing.Size(51, 19);
             this.ClaveLabel.TabIndex = 2;
             this.ClaveLabel.Text = "Clave";
             // 
             // AceptarButton
             // 
-            this.AceptarButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.AceptarButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.AceptarButton.Image = global::Vista.Properties.Resources.Aceptar;
             this.AceptarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AceptarButton.Location = new System.Drawing.Point(39, 98);
             this.AceptarButton.Name = "AceptarButton";
-            this.AceptarButton.Size = new System.Drawing.Size(107, 34);
+            this.AceptarButton.Size = new System.Drawing.Size(114, 34);
             this.AceptarButton.TabIndex = 4;
             this.AceptarButton.Text = "Aceptar";
             this.AceptarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -90,12 +94,12 @@
             // 
             // CancelarButton
             // 
-            this.CancelarButton.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.CancelarButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.CancelarButton.Image = global::Vista.Properties.Resources.Cancelar;
             this.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.CancelarButton.Location = new System.Drawing.Point(195, 98);
+            this.CancelarButton.Location = new System.Drawing.Point(191, 98);
             this.CancelarButton.Name = "CancelarButton";
-            this.CancelarButton.Size = new System.Drawing.Size(107, 34);
+            this.CancelarButton.Size = new System.Drawing.Size(111, 34);
             this.CancelarButton.TabIndex = 5;
             this.CancelarButton.Text = "Cancelar";
             this.CancelarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
