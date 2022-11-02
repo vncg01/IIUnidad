@@ -84,9 +84,10 @@ namespace Vista
                 NombreTextBox.Text = UsuarioDataGridView.CurrentRow.Cells["Nombre"].Value.ToString();
                 ClaveTextBox.Text = UsuarioDataGridView.CurrentRow.Cells["Clave"].Value.ToString();
                 CorreoTextBox.Text = UsuarioDataGridView.CurrentRow.Cells["Correo"].Value.ToString();
-                RolComboBox.Text = UsuarioDataGridView.CurrentRow.Cells["ROL"].Value.ToString();
+                RolComboBox.Text = UsuarioDataGridView.CurrentRow.Cells["Rol"].Value.ToString();
                 EstaActivoCheckBox.Checked = Convert.ToBoolean(UsuarioDataGridView.CurrentRow.Cells["EstaActivo"].Value);
                 HabilitarControles();
+                CodigoTextBox.ReadOnly = true;
             }
             else
             {
@@ -129,7 +130,7 @@ namespace Vista
                 user.Nombre = NombreTextBox.Text;
                 user.Clave = ClaveTextBox.Text;
                 user.Correo = CorreoTextBox.Text;
-                user.Rol = RolComboBox.Text;
+                user.ROL = RolComboBox.Text;
                 user.EstaActivo = EstaActivoCheckBox.Checked;
 
                 bool inserto = await userDatos.InsertarAsync(user);
@@ -177,7 +178,7 @@ namespace Vista
                 user.Nombre = NombreTextBox.Text;
                 user.Clave = ClaveTextBox.Text;
                 user.Correo = CorreoTextBox.Text;
-                user.Rol = RolComboBox.Text;
+                user.ROL = RolComboBox.Text;
                 user.EstaActivo = EstaActivoCheckBox.Checked;
 
                 bool modifico = await userDatos.ActualizarAsync(user);
@@ -194,5 +195,25 @@ namespace Vista
                 }
             }
         }
+
+        private async void EliminarButton_Click(object sender, EventArgs e)
+        {
+            if (UsuarioDataGridView.SelectedRows.Count > 0)
+            {
+                bool elimino = await userDatos.EliminarAsync(UsuarioDataGridView.CurrentRow.Cells["Codigo"].Value.ToString());
+                if (elimino)
+                {
+                    LlenarDataGrid();
+                    MessageBox.Show("Usuario eliminado", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("No se pudo eliminar el usuario", "", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            
+            }
+
+        }
     }
 }
+

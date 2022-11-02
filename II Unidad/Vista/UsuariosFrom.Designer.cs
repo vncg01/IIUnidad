@@ -42,14 +42,14 @@
             this.EstaActivoLabel = new System.Windows.Forms.Label();
             this.EstaActivoCheckBox = new System.Windows.Forms.CheckBox();
             this.NuevoButton = new System.Windows.Forms.Button();
-            this.UsuarioDataGridView = new System.Windows.Forms.DataGridView();
             this.ModificarButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.EliminarButton = new System.Windows.Forms.Button();
             this.CancelarButton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.UsuarioDataGridView)).BeginInit();
+            this.UsuarioDataGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuarioDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // CodigoLabel
@@ -187,19 +187,6 @@
             this.NuevoButton.UseVisualStyleBackColor = true;
             this.NuevoButton.Click += new System.EventHandler(this.NuevoButton_Click);
             // 
-            // UsuarioDataGridView
-            // 
-            this.UsuarioDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.UsuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UsuarioDataGridView.Enabled = false;
-            this.UsuarioDataGridView.Location = new System.Drawing.Point(-1, 285);
-            this.UsuarioDataGridView.Name = "UsuarioDataGridView";
-            this.UsuarioDataGridView.RowTemplate.Height = 25;
-            this.UsuarioDataGridView.Size = new System.Drawing.Size(639, 144);
-            this.UsuarioDataGridView.TabIndex = 13;
-            // 
             // ModificarButton
             // 
             this.ModificarButton.Font = new System.Drawing.Font("Cooper Black", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -240,6 +227,7 @@
             this.EliminarButton.Text = "Eliminar";
             this.EliminarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.EliminarButton.UseVisualStyleBackColor = true;
+            this.EliminarButton.Click += new System.EventHandler(this.EliminarButton_Click);
             // 
             // CancelarButton
             // 
@@ -259,16 +247,27 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // UsuarioDataGridView
+            // 
+            this.UsuarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsuarioDataGridView.Location = new System.Drawing.Point(-3, 277);
+            this.UsuarioDataGridView.Name = "UsuarioDataGridView";
+            this.UsuarioDataGridView.RowTemplate.Height = 25;
+            this.UsuarioDataGridView.Size = new System.Drawing.Size(652, 150);
+            this.UsuarioDataGridView.TabIndex = 18;
+            // 
             // UsuariosFrom
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(636, 428);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(653, 428);
+            this.Controls.Add(this.UsuarioDataGridView);
             this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.EliminarButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.ModificarButton);
-            this.Controls.Add(this.UsuarioDataGridView);
             this.Controls.Add(this.NuevoButton);
             this.Controls.Add(this.EstaActivoCheckBox);
             this.Controls.Add(this.EstaActivoLabel);
@@ -286,8 +285,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UsuariosFrom";
             this.Load += new System.EventHandler(this.UsuariosFrom_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.UsuarioDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UsuarioDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,11 +307,11 @@
         private Label EstaActivoLabel;
         private CheckBox EstaActivoCheckBox;
         private Button NuevoButton;
-        private DataGridView UsuarioDataGridView;
         private Button ModificarButton;
         private Button GuardarButton;
         private Button EliminarButton;
         private Button CancelarButton;
         private ErrorProvider errorProvider1;
+        private DataGridView UsuarioDataGridView;
     }
 }

@@ -35,6 +35,7 @@
             this.inventariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.facturacionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listaDeProductosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +80,8 @@
             // 
             // inventariosToolStripMenuItem
             // 
+            this.inventariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listaDeProductosToolStripMenuItem});
             this.inventariosToolStripMenuItem.Font = new System.Drawing.Font("Lucida Calligraphy", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inventariosToolStripMenuItem.Name = "inventariosToolStripMenuItem";
             this.inventariosToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
@@ -97,6 +100,13 @@
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
             this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
+            // 
+            // listaDeProductosToolStripMenuItem
+            // 
+            this.listaDeProductosToolStripMenuItem.Name = "listaDeProductosToolStripMenuItem";
+            this.listaDeProductosToolStripMenuItem.Size = new System.Drawing.Size(224, 24);
+            this.listaDeProductosToolStripMenuItem.Text = "Lista de productos";
+            this.listaDeProductosToolStripMenuItem.Click += new System.EventHandler(this.listaDeProductosToolStripMenuItem_Click);
             // 
             // Menu
             // 
@@ -126,5 +136,6 @@
         private ToolStripMenuItem inventariosToolStripMenuItem;
         private ToolStripMenuItem clientesToolStripMenuItem;
         private ToolStripMenuItem facturacionToolStripMenuItem;
+        private ToolStripMenuItem listaDeProductosToolStripMenuItem;
     }
 }

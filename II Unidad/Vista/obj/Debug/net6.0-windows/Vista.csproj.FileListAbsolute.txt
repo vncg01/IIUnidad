@@ -30,3 +30,4 @@ C:\Users\usuario\Desktop\Nicoll\Lenguaje de Programación III\II Parcial\Proyect
 C:\Users\usuario\Desktop\Nicoll\Lenguaje de Programación III\II Parcial\Proyectos\IIUnidad\II Unidad\Vista\obj\Debug\net6.0-windows\Vista.Menu.resources
 C:\Users\usuario\Desktop\Nicoll\Lenguaje de Programación III\II Parcial\Proyectos\IIUnidad\II Unidad\Vista\obj\Debug\net6.0-windows\Vista.Properties.Resources.resources
 C:\Users\usuario\Desktop\Nicoll\Lenguaje de Programación III\II Parcial\Proyectos\IIUnidad\II Unidad\Vista\obj\Debug\net6.0-windows\Vista.UsuariosFrom.resources
+C:\Users\usuario\Desktop\Nicoll\Lenguaje de Programación III\II Parcial\Proyectos\IIUnidad\II Unidad\Vista\obj\Debug\net6.0-windows\Vista.ProductosForm.resources

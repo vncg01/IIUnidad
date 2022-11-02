@@ -78,7 +78,7 @@ namespace Datos
                         comando.Parameters.Add("@Nombre", MySqlDbType.VarChar, 50).Value = usuario.Nombre;
                         comando.Parameters.Add("@Clave", MySqlDbType.VarChar, 120).Value = usuario.Clave;
                         comando.Parameters.Add("@Correo", MySqlDbType.VarChar, 45).Value = usuario.Correo;
-                        comando.Parameters.Add("@Rol", MySqlDbType.VarChar, 20).Value = usuario.Rol;
+                        comando.Parameters.Add("@Rol", MySqlDbType.VarChar, 20).Value = usuario.ROL;
                         comando.Parameters.Add("@EstaActivo", MySqlDbType.Bit).Value = usuario.EstaActivo;
 
                         await comando.ExecuteNonQueryAsync();
@@ -97,7 +97,7 @@ namespace Datos
             bool actualizo = false;
             try
             {
-                string sql = "UPDATE usuario SET Nombre=@Nombre, Clave=@Clave, Correo=@Correo, ROL=@Rol, EstaActivo=@EstaActivo WHERE Codigo=@Codigo;";
+                string sql = "UPDATE usuario SET Nombre=@Nombre, Clave=@Clave, Correo=@Correo, Rol=@Rol, EstaActivo=@EstaActivo WHERE Codigo=@Codigo; ";
 
                 using (MySqlConnection _conexion = new MySqlConnection(CadenaConexion.Cadena))
                 {
@@ -109,7 +109,7 @@ namespace Datos
                         comando.Parameters.Add("@Nombre", MySqlDbType.VarChar, 50).Value = usuario.Nombre;
                         comando.Parameters.Add("@Clave", MySqlDbType.VarChar, 120).Value = usuario.Clave;
                         comando.Parameters.Add("@Correo", MySqlDbType.VarChar, 45).Value = usuario.Correo;
-                        comando.Parameters.Add("@Rol", MySqlDbType.VarChar, 20).Value = usuario.Rol;
+                        comando.Parameters.Add("@Rol", MySqlDbType.VarChar, 20).Value = usuario.ROL;
                         comando.Parameters.Add("@EstaActivo", MySqlDbType.Bit).Value = usuario.EstaActivo;
 
                         await comando.ExecuteNonQueryAsync();
