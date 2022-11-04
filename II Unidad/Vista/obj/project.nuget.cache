@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/CUkRzAraBPYySRNibSbjLBvniafO+cmUqV7Mi7VfNDLuxJEijWxQ0ShqAOl40T2SP/fRe9q1msNEAcJ4tuIyQ==",
+  "dgSpecHash": "GLHQzt6JSt2/2w8VvA0j5dfe6bbrLlyhdr/l7Tmc344h8G/pyMqCyg3QD3sghOlZ/tarGfi2yo3LFiUOg6SW/Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\usuario\\Desktop\\Nicoll\\Lenguaje de Programación III\\II Parcial\\Proyectos\\IIUnidad\\II Unidad\\Vista\\Vista.csproj",
   "expectedPackageFiles": [
@@ -12,6 +12,13 @@
     "C:\\Users\\usuario\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\mysql.data\\8.0.31\\mysql.data.8.0.31.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\portable.bouncycastle\\1.9.0\\portable.bouncycastle.1.9.0.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.grid.windows\\20.3.0.47\\syncfusion.grid.windows.20.3.0.47.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.licensing\\20.3.0.47\\syncfusion.licensing.20.3.0.47.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.shared.base\\20.3.0.47\\syncfusion.shared.base.20.3.0.47.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.shared.windows\\20.3.0.47\\syncfusion.shared.windows.20.3.0.47.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.spellchecker.base\\20.3.0.47\\syncfusion.spellchecker.base.20.3.0.47.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.tools.base\\20.3.0.47\\syncfusion.tools.base.20.3.0.47.nupkg.sha512",
+    "C:\\Users\\usuario\\.nuget\\packages\\syncfusion.tools.windows\\20.3.0.47\\syncfusion.tools.windows.20.3.0.47.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\system.configuration.configurationmanager\\4.4.1\\system.configuration.configurationmanager.4.4.1.nupkg.sha512",
     "C:\\Users\\usuario\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",

@@ -102,7 +102,7 @@ namespace Datos
             bool elimino = false;
             try
             {
-                string sql = "DELETE FROM productoo WHERE Codigo = @Codigo;";
+                string sql = "DELETE FROM producto WHERE Codigo = @Codigo;;";
 
                 using (MySqlConnection _conexion = new MySqlConnection(CadenaConexion.Cadena))
                 {
